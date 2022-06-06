@@ -6,7 +6,7 @@
     "github_repo_name": "aws-bootstrap-kit-examples",
     "github_repo_branch": "main",
     "email": "asd-adm@gts.com",
-    "force_email_verification": true,
+    "force_email_verification": false,
     "pipeline_deployable_regions": [
       "ca-central-1",
     ]
