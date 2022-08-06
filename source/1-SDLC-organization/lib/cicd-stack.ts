@@ -58,11 +58,11 @@ export class AWSBootstrapKitLandingZonePipelineStack extends Stack {
       `${this.node.tryGetContext('github_alias')}/${this.node.tryGetContext('github_repo_name')}`,
       this.node.tryGetContext('github_repo_branch'),
       {
-        authentication: SecretValue.secretsManager('GITHUB_TOKEN')
+        authentication: SecretValue.secretsManager('GITHUB_TOKEN-2')
       }
     );
 
-    const pipelineName = 'AWSBootstrapKit-LandingZone';
+    const pipelineName = 'AWSBootstrapKit-LandingZone-2';
 
     const pipeline = new pipelines.CodePipeline(this, 'Pipeline', {
       pipelineName: pipelineName,
